@@ -9,10 +9,10 @@
 
 | # | Idea | Buyer | Price point | Confidence |
 |---|------|-------|-------------|------------|
-| 1 | EU e-invoicing (Peppol) tooling for SMBs, sold through accountants | EU SMBs / accounting firms | €29–99/mo | High |
-| 2 | Security + maintenance subscription for vibe-coded apps | Non-technical app creators | $49–199/mo | High |
+| 1 | EU e-invoicing (Peppol) tooling for SMBs, sold through accountants | EU SMBs / accounting firms | €29–99/mo | High — narrowed wedge (see deep dive) |
+| 2 | Security + maintenance subscription for vibe-coded apps | Non-technical app creators | $49–199/mo | High — repositioned to maintenance retainer (see deep dive) |
 | 3 | AI-agent readiness for SMB e-commerce ("is your store visible to ChatGPT?") | Shopify/Woo merchants | $29–149/mo | High |
-| 4 | Vertical AI receptionist for one offline trade | Home-service SMBs | $99–299/mo | Medium-high |
+| 4 | Vertical AI receptionist for one offline trade | Home-service SMBs | $99–299/mo | Downgraded — product play closed (see deep dive) |
 | 5 | Client-document chasing tool for bookkeeping firms | Bookkeeping/accounting firms | $49–149/mo | Medium-high |
 | 6 | B2B-commerce apps on Shopify (quotes, net terms, buyer accounts) | Shopify B2B merchants | $79–299/mo | Medium-high |
 | 7 | Deep two-app connector / niche dataset API | SMB ops teams / devs | $29–500+/mo | Medium |
@@ -175,6 +175,34 @@ Before the ideas, the screens they had to pass. These come from 2024–2026 benc
 **Key risks:** This is the highest-beta idea on the list: (a) the labs or funded players may absorb any given niche within 12–18 months — pick wedges that are *operationally* annoying rather than technically glamorous (auth, billing for agent usage, compliance logging); (b) developer price sensitivity and build-it-myself churn; (c) requires genuine technical depth — this idea is only for a founder who is already living in this stack. Sponsored with the explicit caveat: ship fast, charge early, be willing to sell or fold the bet within 18 months.
 
 ---
+
+## Post-publication deep dives (June 9, 2026)
+
+Second-round research on ideas #1, #2, and #4 — focused on saturation, sherlock risk, and structural barriers. These revise the original assessments.
+
+### Idea #4 (AI receptionist): downgraded — the product window has closed
+
+- **Top end:** Avoca raised $125M+ at a **$1B valuation (April 2026)**, eight-figure ARR, partnered with ServiceTitan/Nexstar — it owns mid-market trades.
+- **Bottom end:** Rosie ($49/mo), Sameday (~$3.5M ARR), NextPhone ($199/mo) own the low end; salons collide with Zenoti's native AI receptionist; restaurants with Slang.ai ($36M Series B); auto with Numa.
+- **Sherlocked already:** ServiceTitan Contact Center Pro voice agents (Nov 2024), **Jobber AI Receptionist GA Aug 2025** ($99/mo add-on), Housecall Pro CSR AI. The standalone product's only durable edge — deep FSM integration — is now native to the FSMs.
+- **Reseller channel is industrialized:** white-label wholesale at ~$55/agent resold at $250–500/mo, 1,000+ agencies on a single white-label dashboard; every plumber is cold-emailed about AI receptionists weekly.
+- **Retention is ugly at the low end:** median gross revenue retention ~40%, ~23% for sub-$50/mo products; 31% of consumers hang up on AI immediately.
+- **What remains:** after-hours/overflow-only hybrid positioning (the evidence-backed retention pattern), emergency dispatch triage with on-call rotation logic, Spanish-bilingual metros, and forgotten trades (septic, well drilling, chimney, appliance repair) — viable as a high-touch local productized service (~$300–500/mo, dozens of clients), not as a SaaS product company.
+
+### Idea #2 (vibe-code security): confirmed demand, but reposition away from scanning
+
+- **Scanning is saturated and being sherlocked:** 8+ self-serve scanners at $5–29/mo (Vibe App Scanner closest to category leader, with an SEO moat); Lovable shipped Security Checker 2.0 (Aug 2025); **Replit's Security Agent + Auto-Protect is literally "ongoing security monitoring" as a platform feature**. Pure scanning has a ~2-year half-life.
+- **Audits/rescue are crowded but fragmented:** $500–3,000 audits (Sherlock Forensics, Beesoul — which reports "is my Lovable app safe?" as its #1 inbound request), £999+ rescue services, 10+ dev shops pivoted to "vibe-code cleanup" ($2K–20K projects), Fiverr bottom at $5–50.
+- **The open slot nobody owns:** a **recurring maintenance + security + compliance subscription** ($200–500/mo) for revenue-generating apps whose creators hit the documented "month-3 wall." Supply is project-based; demand signals are strong; no public MRR leader exists. Durability drivers beyond scanning: Apple began rejecting vibe-coded apps (May 2026), EU AI Act + GDPR liability stacking, cyber-insurance compliance demands.
+- **Market size:** Lovable ~8M users/$500M+ ARR/~1M new projects per week; Replit $525M annualized. Funnel cliff to apps-with-real-user-data is steep (1–3%), so the buyer pool is tens of thousands, not millions — right-sized for a solo business, not venture scale.
+- **Caution flag:** no public MRR reports from anyone in the niche yet — validate the retainer conversion rate early.
+
+### Idea #1 (EU e-invoicing): still high confidence, but the wedge is narrower than first written
+
+- **Not structurally excluded:** solo founders can ride existing access-point APIs (Recommand, e-invoice.be at €0.18–0.25/invoice, getpeppr at €49–399/mo built on Storecove, Qvalia €39/mo) instead of pursuing Peppol certification. Proof of indie viability: Recommand reached **2,500 customers in ~1 year** riding the Belgian mandate.
+- **But horizontal SMB invoicing is gone:** Belgium's floor is €0–10/mo (Billit €7.50, Accountable free Peppol, Dexxter €180/yr); Germany is incumbent-dominated with no Peppol mandate.
+- **France PA status is out of reach** (ISO 27001, ~€100K all-in), but the officially sanctioned OD/"Solution Compatible" role on top of one of the ~108 registered platforms is low-burden.
+- **The real wedges:** (a) embedded Peppol APIs/SDKs for vertical SaaS that must add compliant sending, (b) PDF-to-Peppol conversion for the long tail (43% of Belgian zero-employee businesses still had no Peppol ID as of Jan 2026; Hermes, the free state platform, was decommissioned Dec 2025; Belgium's 120% tax deduction subsidizes paid tools), and (c) the **French SME issuing wave of Sept 2027** — the one mandate window still genuinely ahead.
 
 ## Watchlist (close, but didn't make the sponsored list)
 
